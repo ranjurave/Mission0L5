@@ -1,0 +1,45 @@
+.navbar-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.name-logo{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+.name-logo img{
+    width: 50px;
+    height:60px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.menu-items{
+    display: flex;
+    margin-right: 50px;
+}
+.menu-items p{
+    font-size: 20px;
+}
+.menu-buttons{
+    margin: auto;
+    width: 150px;
+    text-align: center;
+}
+.menu-items :hover{
+    background-color: darkgray;
+}
+.menu-items button{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+}
+@media only screen and (max-width: 800px) {
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
