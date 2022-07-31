@@ -5,13 +5,17 @@ import Listing from './listing';
 function App() {
   return (
     <>
-      <Navbar/>
-      <Header/>
-      <div className='car-listings'>
-        <Listing/>
-        <Listing/>
-        <Listing/>
-        <Listing/>
+      <div className='page-body'>
+        <div className='nav-header'>
+          <Navbar/>
+          <Header/>
+        </div>
+        <div className='car-listings'>
+          <Listing/>
+          <Listing/>
+          <Listing/>
+          <Listing/>
+        </div>
       </div>
     </>
   );

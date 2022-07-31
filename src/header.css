@@ -36,3 +36,34 @@
     width: 30%;
     font-size: 100%;
 }
+@media only screen and (max-width: 800px) {
+    .header-bg{
+        position: relative;
+        top:30vh;
+    }
+    .header-name{
+        color: white;
+        font-size:2vw;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding-left: 0vw;
+    }
+    .search-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0%;
+        height: 100%;
+    }
+    .search-box input{
+        height: 50px;
+        width: 100%;
+        font-size: 150%;
+    }
+    .search-box button{
+        height: 50px;
+        width: 100%;
+        font-size: 100%;
+    }
+}

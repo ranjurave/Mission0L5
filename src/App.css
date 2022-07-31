@@ -1,8 +1,16 @@
 body{
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif; 
+}
+.page-body{
+  display: flex;
+  flex-direction: column;
 }
 .car-listings{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.nav-header{
+  display: flex;
+  flex-direction: column;
 }
