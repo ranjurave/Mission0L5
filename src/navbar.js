@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
-    const [active, setActive] = useState("menu-items")
-    const navToggle = () => {
-        active === "menu-items" ? setActive("menu-items-active") : setActive("menu-items")
+    const [menuType, setMenu] = useState("menu-items-collapsed")
+    const menuToggle = () => {
+        console.log(menuType);
+        menuType === "menu-items-collapsed" ? setMenu("menu-items") : setMenu("menu-items-collapsed")
     }
   return (
     <div className='navbar-menu'>
@@ -16,13 +17,11 @@ function Navbar() {
                 <img src = '/images/electric_car.jpg' alt='logo'/>
                 <h1>ECar</h1>
             </div>
-            <div className={active ? 'menu-items-active': 'menu-items'  }>
-                <button onClick = {navToggle} >
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
+            <div onClick={menuToggle} className='menu-collapse-button' >
+                <FontAwesomeIcon icon={faBars} />
             </div>
         </div>
-        <div className={active ? 'menu-items': 'menu-items-active' }>
+        <div className={menuType}>
             <div className='menu-buttons'>
                 <p>About</p>
             </div>
