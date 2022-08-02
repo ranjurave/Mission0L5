@@ -9,7 +9,7 @@
 }
 .name-logo{
     display: flex;
-    margin-left: 50px;
+    margin-left: 4vw;
     align-items: center;
 }
 .name-logo img{
@@ -18,7 +18,7 @@
     border-radius: 50px;
     margin: 20px;
 }
-.menu-collapse-button{
+.menu-mobile-button{
     display: none;
 }
 .menu-buttons{
@@ -26,9 +26,11 @@
     width: 15vw;
     text-align: center;
 }
-.menu-items-collapsed{
-    display: flex;
-    flex-direction: row;
+.menu-collapsed{
+    display: none;
+}
+.menu-expand{
+    display: none;
 }
 .menu-items{
     display: flex;
@@ -42,16 +44,17 @@
     width: 120px;
     height: 50px;
     margin: auto;
-    font-size: 18px;
+    font-size: 2vw;
+    background-color: #E42024;
+    color: white;
+    border: none;
+}
+.menu-items button:hover{
+    background-color: #ff7073;
 }
 .menu-items :hover{
     transition: 0.4s ease;
     background-color: darkgray;
-}
-.menu-items-collapsed button{
-    width: 100px;
-    height: 40px;
-    margin: auto;
 }
 
 @media only screen and (max-width: 786px) {
@@ -67,38 +70,49 @@
     .menu-items{
         display: none;
     }
-    .menu-collapse-button{
+    .menu-mobile-button{
         display: flex;
-        font-size: 50px;
+        flex-direction: column;
+        font-size: 40px;
         justify-content: flex-end;
-        margin-right: 20px;
+        align-items: flex-end;
+        margin-right: 10px;
+        margin-top: 1vh; 
     }
     .menu-buttons{
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 10vh;
     }
-    .menu-items-collapsed{
+    .menu-expand{
         display: flex;
         flex-direction: column;
-        width: 75%;
-        position: fixed;
-        right: 5px;
-        top: 8vh;
-        height: 30vh;
-        color: white;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        width: 40vw;
         background-color: black;
-        font-size: 30px;
+        color: white;
+        font-size: 6vw;
     }
-    .menu-items-collapsed button{
+    .menu-expand .menu-buttons{
+        width: auto;
+        height: 5vh;
+        font-size: 3vh;
+    }
+    .menu-expand button{
         width: 100%;
-        height: 30vh;
-        font-size: 30px;
+        height: 10vh;
+        font-size: 5vh;
         margin: 0px;
+        background-color: #E42024;
+        color: white;
+    }
+    .menu-expand button:hover{
+        background-color: #ff7073;
     }
     .menu-buttons:hover{
         color: gray;
     }
 }
-
-
-/* TODO: turnoff scroll */
