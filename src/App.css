@@ -15,3 +15,44 @@ body{
   display: flex;
   flex-direction: column;
 }
+.chartframe{
+  border:none;
+  background-color: aquamarine;
+}
+.fa-regular{
+  color: black;
+  font-size: 50px;
+}
+.fa-regular :hover{
+  color: grey;
+}
+.chat-icon{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.chat-icon-noshow{
+  display: none;
+}
+.chat-window{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.chat-window-noshow{
+  display: none;
+}
+
+.chat-window > button {
+  opacity: 0.3;
+  position:relative;
+  float: right;
+  right:60px;
+  bottom:-10px;
+  height: 40px;
+  width: 40px;
+  transition: 0.5s;
+}
+.chat-window  > button {
+  opacity: 1;
+}  
