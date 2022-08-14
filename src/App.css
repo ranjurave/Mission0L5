@@ -1,6 +1,5 @@
 body{
   font-family: 'Fira Sans Extra Condensed', sans-serif; 
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 .page-body{
   display: flex;
@@ -19,40 +18,34 @@ body{
   border:none;
   background-color: aquamarine;
 }
-.fa-regular{
+.fa-regular {
   color: black;
   font-size: 50px;
 }
-.fa-regular :hover{
-  color: grey;
+.fa-solid {
+  color: black;
+  font-size: 50px;
 }
 .chat-icon{
   display: flex;
   justify-content: flex-end;
   margin: 20px;
 }
-.chat-icon-noshow{
+.fa-solid{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.chat-icon-minimise{
   display: none;
 }
 .chat-window{
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
   margin: 20px;
 }
 .chat-window-noshow{
   display: none;
 }
-
-.chat-window > button {
-  opacity: 0.3;
-  position:relative;
-  float: right;
-  right:60px;
-  bottom:-10px;
-  height: 40px;
-  width: 40px;
-  transition: 0.5s;
-}
-.chat-window  > button {
-  opacity: 1;
-}  
