@@ -22,6 +22,10 @@ function App() {
           <Listing/>
           <Listing/>
           <Listing/>
+          <Listing/>
+          <Listing/>
+          <Listing/>
+          <Listing/>
         </div>
         <div className={chatwindow ? 'chat-icon' : 'chat-icon-minimise'}>
           <i onClick={showchat} className="fa-regular fa-comment-dots"></i>
